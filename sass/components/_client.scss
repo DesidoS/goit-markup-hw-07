@@ -11,13 +11,13 @@
     color: $social-network;
     transition: color $cubic-bezier,
         border $cubic-bezier;
+        &:hover,
+        &:focus {
+            border: 1px solid $link-hover-color;
+            color: $link-hover-color;
+        }
 }
 
-.client__link:hover,
-.client__link:focus {
-    border: 1px solid $link-hover-color;
-    color: $link-hover-color;
-}
 
 .client__item:not(:last-child) {
     margin-right: 30px;

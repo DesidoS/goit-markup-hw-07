@@ -14,13 +14,11 @@
 
 .button__order {
     transition: background-color $cubic-bezier;
+    &:hover,
+    .button__order:focus {
+        background-color: $background-color-hover;
+    }
 }
-
-.button__order:hover,
-.button__order:focus {
-    background-color: $background-color-hover;
-}
-
 .button__submit {
     display: block;
     margin: 0 auto;

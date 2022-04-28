@@ -22,13 +22,13 @@
     fill: $social-network;
     transition: fill $cubic-bezier,
         background-color $cubic-bezier;
+        &:hover,
+        &:focus {
+            fill: $white-text-color;
+            background-color: $link-hover-color;
+        }
 }
 
-.social__link:hover,
-.social__link:focus {
-    fill: $white-text-color;
-    background-color: $link-hover-color;
-}
 
 .social__link--footer {
     fill: $white-text-color;

@@ -1,4 +1,3 @@
-/* Section three */
 .doing {
     display: flex;
     margin-top: 50px;
@@ -6,11 +5,11 @@
 
 .doing__item {
     display: flex;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
-.doing__item:not(:last-child) {
-    margin-right: 30px;
-}
 
 .doing__thumb {
     position: relative;
@@ -33,6 +32,3 @@
     text-transform: uppercase;
     color: $white-text-color;
 }
-
-/* Section three */
-/* ------------------------------------------- */

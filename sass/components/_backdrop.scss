@@ -1,4 +1,3 @@
-/* Backdrop */
 .backdrop {
     position: fixed;
     width: 100%;
@@ -49,6 +48,10 @@
     background-color: $white-text-color;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+    &:hover .modal__icon,
+    &:focus .modal__icon {
+        fill: $link-hover-color;
+    }
 }
 
 .modal__icon {
@@ -56,11 +59,6 @@
     height: 11px;
     fill: black;
     transition: fill $cubic-bezier;
-}
-
-.modal__close:hover .modal__icon,
-.modal__close:focus .modal__icon {
-    fill: $link-hover-color;
 }
 
 .form__header {
@@ -86,14 +84,15 @@
     margin-top: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    &:focus {
+        border: 1px solid $link-hover-color;
+        outline: $link-hover-color;
+        cursor: pointer;
+    }
+    &:focus+.form__icon {
+        fill: $link-hover-color;
+    }
 }
-
-.form__input:focus {
-    border: 1px solid $link-hover-color;
-    outline: $link-hover-color;
-    cursor: pointer;
-}
-
 .form__label {
     display: block;
     margin-top: 10px;
@@ -110,11 +109,6 @@
     width: 18px;
     height: 18px;
 }
-
-.form__input:focus+.form__icon {
-    fill: $link-hover-color;
-}
-
 .form__input--comment {
     display: block;
     padding-left: 16px;
@@ -156,6 +150,10 @@
     overflow: hidden;
     border: 0;
     clip: rect(0 0 0 0);
+    &:checked~.check__icon {
+        border-color: transparent;
+        background-image: url(../images/check1.svg);
+    }
 }
 
 .check__icon {
@@ -171,12 +169,3 @@
     background-image: url(../images/border.svg);
     transition: background-image $cubic-bezier;
 }
-
-.check__input:checked~.check__icon {
-    border-color: transparent;
-    background-image: url(../images/check1.svg);
-}
-
-
-/* Backdrop */
-/* ------------------------------------------- */

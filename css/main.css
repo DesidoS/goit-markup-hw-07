@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -66,7 +65,6 @@ body {
   color: #212121;
 }
 
-/* Hedder */
 .page__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -115,8 +113,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav__link:hover,
-.nav__link:focus {
+.nav__link:hover, .nav__link:focus {
   color: #2196f3;
 }
 
@@ -164,8 +161,7 @@ body {
   color: #757575;
 }
 
-.contact__link:hover,
-.contact__link:focus {
+.contact__link:hover, .contact__link:focus {
   color: #2196f3;
 }
 
@@ -174,8 +170,6 @@ body {
   margin-right: 10px;
 }
 
-/* Hedder */
-/* общие стили лого */
 .logo {
   font-family: Raleway, sans-serif;
   font-size: 26px;
@@ -191,8 +185,6 @@ body {
   color: #FFFFFF;
 }
 
-/*  */
-/* Section one */
 .hero {
   background-color: #2F303A;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bcg-img.jpg");
@@ -217,8 +209,6 @@ body {
   color: #FFFFFF;
 }
 
-/* Section one */
-/* Backdrop */
 .backdrop {
   position: fixed;
   width: 100%;
@@ -272,17 +262,17 @@ body {
   border-radius: 50%;
 }
 
+.modal__close:hover .modal__icon,
+.modal__close:focus .modal__icon {
+  fill: #2196f3;
+}
+
 .modal__icon {
   width: 11px;
   height: 11px;
   fill: black;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal__close:hover .modal__icon,
-.modal__close:focus .modal__icon {
-  fill: #2196f3;
 }
 
 .form__header {
@@ -315,6 +305,10 @@ body {
   cursor: pointer;
 }
 
+.form__input:focus + .form__icon {
+  fill: #2196f3;
+}
+
 .form__label {
   display: block;
   margin-top: 10px;
@@ -330,10 +324,6 @@ body {
   left: 15px;
   width: 18px;
   height: 18px;
-}
-
-.form__input:focus + .form__icon {
-  fill: #2196f3;
 }
 
 .form__input--comment {
@@ -402,6 +392,11 @@ body {
   clip: rect(0 0 0 0);
 }
 
+.check__input:checked ~ .check__icon {
+  border-color: transparent;
+  background-image: url(../images/check1.svg);
+}
+
 .check__icon {
   position: absolute;
   display: block;
@@ -417,14 +412,6 @@ body {
   transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.check__input:checked ~ .check__icon {
-  border-color: transparent;
-  background-image: url(../images/check1.svg);
-}
-
-/* Backdrop */
-/* ------------------------------------------- */
-/* Section two */
 .peculiarities {
   padding-bottom: 0;
 }
@@ -470,9 +457,6 @@ body {
   line-height: 1.71;
 }
 
-/* Section two */
-/* ------------------------------------------- */
-/* Section three */
 .doing {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -512,8 +496,6 @@ body {
   color: #FFFFFF;
 }
 
-/* Section three */
-/* ------------------------------------------- */
 .team {
   background-color: #F5F4FA;
 }
@@ -540,13 +522,13 @@ body {
   color: #212121;
 }
 
-.employee__item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .employee__item {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.employee__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .employee__caption {
@@ -584,8 +566,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client__link:hover,
-.client__link:focus {
+.client__link:hover, .client__link:focus {
   border: 1px solid #2196f3;
   color: #2196f3;
 }
@@ -632,8 +613,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filtr__button:hover,
-.filtr__button:focus {
+.filtr__button:hover, .filtr__button:focus {
   background-color: #2196f3;
   color: #FFFFFF;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -685,10 +665,15 @@ body {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project__link:hover,
-.project__link:focus {
+.project__link:hover, .project__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project__link:hover .project__back,
+.project__link:focus .project__back {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .project__thumb {
@@ -710,12 +695,6 @@ body {
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-}
-
-.project__link:hover .project__back,
-.project__link:focus .project__back {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .footer {
@@ -761,8 +740,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.info__contact:hover,
-.info__contact:focus {
+.info__contact:hover, .info__contact:focus {
   color: #2196f3;
 }
 
@@ -830,7 +808,7 @@ body {
 }
 
 .button__order:hover,
-.button__order:focus {
+.button__order .button__order:focus {
   background-color: #188CE8;
 }
 
@@ -882,8 +860,7 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social__link:hover,
-.social__link:focus {
+.social__link:hover, .social__link:focus {
   fill: #FFFFFF;
   background-color: #2196f3;
 }

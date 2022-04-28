@@ -34,12 +34,12 @@
 .info__contact {
     color: $contact-text-color;
     transition: color $cubic-bezier;
+    &:hover,
+    &:focus {
+        color: $link-hover-color;
+    }
 }
 
-.info__contact:hover,
-.info__contact:focus {
-    color: $link-hover-color;
-}
 
 .connect {
     margin-left: auto;
@@ -68,13 +68,13 @@
     line-height: 1.25;
     letter-spacing: 0.03em;
     background-color: $bg-color-second;
+    &:focus {
+        border: 1px solid $link-hover-color;
+        outline: $link-hover-color;
+        cursor: pointer;
+    }
 }
 
-.subscribe__input:focus {
-    border: 1px solid $link-hover-color;
-    outline: $link-hover-color;
-    cursor: pointer;
-}
 
 .subscribe__send {
     margin-left: 10px;
