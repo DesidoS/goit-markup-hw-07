@@ -1,0 +1,38 @@
+/* Section two */
+.peculiarities {
+    padding-bottom: 0;
+}
+
+.peculiarities {
+    display: flex;
+    justify-content: center;
+}
+
+.peculiarities__title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    line-height: 1.14;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--tit-text-color);
+}
+
+.peculiarities__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.peculiarities__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    background-color: var(--bcg-filtr-color);
+}
+
+.peculiarities__par {
+    line-height: 1.71;
+}
+
+/* Section two */
+/* ------------------------------------------- */

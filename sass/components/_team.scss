@@ -1,0 +1,46 @@
+.team {
+    background-color: var(--bcg-filtr-color);
+}
+
+.employee {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.employee__name,
+.employee__position {
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+}
+
+.employee__name {
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: var(--tit-text-color);
+}
+
+.employee__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.employee__item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.employee__caption {
+    background-color: var(--white-text-color);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 0px 0px 4px 4px;
+    border-right: var(--border-color) solid 1px;
+    border-bottom: var(--border-color) solid 1px;
+    border-left: var(--border-color) solid 1px;
+}
+
+.employee__position {
+    margin-bottom: 16px;
+}

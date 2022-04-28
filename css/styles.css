@@ -86,7 +86,7 @@ body {
   margin-right: auto;
   border-bottom:var(--border-color) solid 1px;
 }
-.nav {
+.navigation {
   display: flex;
 }
 .header__logo {
@@ -111,7 +111,7 @@ body {
 /*  */
 
 
-.nav__list {
+.nav {
   display: flex;
 }
 .nav__item:not(:first-child) {
@@ -367,7 +367,7 @@ background-image: url(../images/check1.svg);
 .peculiarities {
   padding-bottom: 0;
 }
-.peculiarities__list {
+.peculiarities {
   display: flex;
   justify-content: center;
 }
@@ -396,7 +396,7 @@ background-image: url(../images/check1.svg);
 /* Section two */
 /* ------------------------------------------- */
 /* Section three */
-.doing__list{
+.doing {
   display: flex;
   margin-top: 50px;
 }
@@ -428,10 +428,10 @@ background-image: url(../images/check1.svg);
 /* Section three */
 /* ------------------------------------------- */
 /* Section four */
-.employee {
+.team {
   background-color: var(--bcg-filtr-color);
 }
-.employee__list {
+.employee {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
@@ -471,7 +471,7 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
 /* Section four */
 /* ------------------------------------------- */
 /* Section five */
-.client__list{
+.client{
   display: flex;
   justify-content: center;
   margin-top: 50px;
@@ -617,12 +617,12 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
   text-transform: uppercase;
   color: var(--white-text-color);
 }
-.info__link {
-  color: var(--white-text-color);
-}
-.info__list {
+.info {
   margin-top: 20px;
   line-height: 1.71;
+}
+.info__link {
+  color: var(--white-text-color);
 }
 .info__item:not(:first-child) {
   margin-top: 9px;
@@ -636,7 +636,7 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
 .info__contact:focus {
   color: var(--link-hover-color);
 }
-.social {
+.connect {
   margin-left: auto; /* margin-left: 70px; */
 }
 .subscribe {
@@ -664,7 +664,6 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
   outline: var(--link-hover-color);
   cursor: pointer;
 }
-
 .subscribe__send {
   margin-left: 10px;
   width:24px;
@@ -712,7 +711,7 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
   width: 20px;
   height: 20px;
 }
-.social__list {
+.social {
   display: flex;
   justify-content: center;
 }

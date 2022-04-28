@@ -1,7 +1,17 @@
-.second-tit {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    color: var(--tit-text-color);
-}
+@import 'utils/variables';
+@import 'utils/visually-hidden';
+@import 'utils/reset';
+@import 'components/general';
+@import 'components/header';
+@import 'components/logo';
+@import 'components/hero';
+@import 'components/backdrop';
+@import 'components/peculiarities';
+@import 'components/doing';
+@import 'components/team';
+@import 'components/client';
+@import 'components/filtr';
+@import 'components/project';
+@import 'components/footer';
+@import 'components/button';
+@import 'components/social';
