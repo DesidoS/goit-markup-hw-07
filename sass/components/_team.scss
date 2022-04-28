@@ -1,5 +1,5 @@
 .team {
-    background-color: var(--bcg-filtr-color);
+    background-color: $bcg-filtr-color;
 }
 
 .employee {
@@ -18,7 +18,7 @@
 .employee__name {
     margin-bottom: 10px;
     font-weight: 500;
-    color: var(--tit-text-color);
+    color: $tit-text-color;
 }
 
 .employee__item:not(:last-child) {
@@ -32,13 +32,13 @@
 }
 
 .employee__caption {
-    background-color: var(--white-text-color);
+    background-color: $white-text-color;
     padding-top: 30px;
     padding-bottom: 30px;
     border-radius: 0px 0px 4px 4px;
-    border-right: var(--border-color) solid 1px;
-    border-bottom: var(--border-color) solid 1px;
-    border-left: var(--border-color) solid 1px;
+    border-left: $border-color solid 1px;
+    border-right: $border-color solid 1px;
+    border-bottom: $border-color solid 1px;
 }
 
 .employee__position {

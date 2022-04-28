@@ -8,17 +8,17 @@
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    color: var(--white-text-color);
-    background-color: var(--link-hover-color);
+    color: $white-text-color;
+    background-color: $link-hover-color;
 }
 
 .button__order {
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color $cubic-bezier;
 }
 
 .button__order:hover,
 .button__order:focus {
-    background-color: var(--background-color-hover);
+    background-color: $background-color-hover;
 }
 
 .button__submit {

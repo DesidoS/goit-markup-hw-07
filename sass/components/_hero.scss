@@ -1,6 +1,6 @@
 /* Section one */
 .hero {
-    background-color: var(--bg-color-second);
+    background-color: $bg-color-second;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bcg-img.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -19,7 +19,7 @@
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--white-text-color);
+    color: $white-text-color;
 }
 
 /* Section one */

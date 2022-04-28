@@ -1,5 +1,5 @@
 .footer {
-    background-color: var(--bg-color-second);
+    background-color: $bg-color-second;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -15,7 +15,7 @@
     font-weight: 700;
     line-height: 16px;
     text-transform: uppercase;
-    color: var(--white-text-color);
+    color: $white-text-color;
 }
 
 .info {
@@ -24,7 +24,7 @@
 }
 
 .info__link {
-    color: var(--white-text-color);
+    color: $white-text-color;
 }
 
 .info__item:not(:first-child) {
@@ -32,13 +32,13 @@
 }
 
 .info__contact {
-    color: var(--contact-text-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: $contact-text-color;
+    transition: color $cubic-bezier;
 }
 
 .info__contact:hover,
 .info__contact:focus {
-    color: var(--link-hover-color);
+    color: $link-hover-color;
 }
 
 .connect {
@@ -61,18 +61,18 @@
     width: 358px;
     height: 50px;
     border-radius: 4px;
-    border: 1px solid var(--input-bcg);
-    color: var(--contact-text-color);
+    border: 1px solid $input-bcg;
+    color: $contact-text-color;
     font-family: 'Roboto';
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
-    background-color: var(--bg-color-second);
+    background-color: $bg-color-second;
 }
 
 .subscribe__input:focus {
-    border: 1px solid var(--link-hover-color);
-    outline: var(--link-hover-color);
+    border: 1px solid $link-hover-color;
+    outline: $link-hover-color;
     cursor: pointer;
 }
 
@@ -80,5 +80,5 @@
     margin-left: 10px;
     width: 24px;
     height: 24px;
-    fill: var(--white-text-color);
+    fill: $white-text-color;
 }

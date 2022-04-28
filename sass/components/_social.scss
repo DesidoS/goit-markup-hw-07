@@ -19,19 +19,19 @@
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    fill: var(--social-network);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: $social-network;
+    transition: fill $cubic-bezier,
+        background-color $cubic-bezier;
 }
 
 .social__link:hover,
 .social__link:focus {
-    fill: var(--white-text-color);
-    background-color: var(--link-hover-color);
+    fill: $white-text-color;
+    background-color: $link-hover-color;
 }
 
 .social__link--footer {
-    fill: var(--white-text-color);
-    background-color: var(--social-network-bcg);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: $white-text-color;
+    background-color: var($social-network-bcg);
+    transition: background-color $cubic-bezier;
 }

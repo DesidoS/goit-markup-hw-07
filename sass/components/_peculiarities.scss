@@ -15,7 +15,7 @@
     line-height: 1.14;
     font-size: 14px;
     text-transform: uppercase;
-    color: var(--tit-text-color);
+    color: $tit-text-color;
 }
 
 .peculiarities__item:not(:last-child) {
@@ -27,7 +27,7 @@
     align-items: center;
     justify-content: center;
     height: 120px;
-    background-color: var(--bcg-filtr-color);
+    background-color: $bcg-filtr-color;
 }
 
 .peculiarities__par {
