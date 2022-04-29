@@ -30,8 +30,8 @@
 }
 
 
-.social__link--footer {
+.social__link--grey {
     fill: $white-text-color;
-    background-color: var($social-network-bcg);
-    transition: background-color $cubic-bezier;
+    background-color: $social-network-bcg;
+
 }

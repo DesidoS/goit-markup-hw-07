@@ -23,6 +23,7 @@
     transition: color $cubic-bezier,
         background-color $cubic-bezier,
         box-shadow $cubic-bezier;
+        
         &:hover,
         &:focus {
             background-color: $link-hover-color;
