@@ -10,21 +10,31 @@
     letter-spacing: 0.06em;
     color: $white-text-color;
     background-color: $link-hover-color;
-}
 
-.button__order {
+&__order {
     transition: background-color $cubic-bezier;
     &:hover,
-    .button__order:focus {
+    &:focus {
         background-color: $background-color-hover;
     }
 }
-.button__submit {
+&__submit {
     display: block;
     margin: 0 auto;
+        transition: background-color $cubic-bezier;
+    &:hover,
+    &:focus {
+            background-color: $background-color-hover;
+    }
 }
 
-.subscribe__button {
+&__button {
     display: flex;
     padding: 10px 28px;
+        transition: background-color $cubic-bezier;
+    &:hover,
+    &:focus {
+        background-color: $background-color-hover;
+    }
+}
 }

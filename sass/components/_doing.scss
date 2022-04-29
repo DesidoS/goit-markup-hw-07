@@ -1,34 +1,34 @@
 .doing {
     display: flex;
     margin-top: 50px;
-}
-
-.doing__item {
-    display: flex;
-    &:not(:last-child) {
-        margin-right: 30px;
+    
+    &__item {
+        display: flex;
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
     }
-}
-
-
-.doing__thumb {
-    position: relative;
-}
-
-.doing__caption {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 70px;
-    background-color: $doing-bcg;
-    padding-top: 27px;
-}
-
-.doing__name {
-    text-align: center;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-    color: $white-text-color;
+    
+    
+    &__thumb {
+        position: relative;
+    }
+    
+    &__caption {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+        background-color: $doing-bcg;
+        padding-top: 27px;
+    }
+    
+    &__name {
+        text-align: center;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: $white-text-color;
+    }
 }

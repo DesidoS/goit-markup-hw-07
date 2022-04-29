@@ -2,30 +2,31 @@
     display: flex;
     padding-bottom: 0;
     justify-content: center;
-}
-
-.peculiarities__title {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    font-weight: 700;
-    line-height: 1.14;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: $tit-text-color;
-}
-
-.peculiarities__item:not(:last-child) {
-    margin-right: 30px;
-}
-
-.peculiarities__box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 120px;
-    background-color: $bcg-filtr-color;
-}
-
-.peculiarities__par {
-    line-height: 1.71;
+    
+    &__title {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-weight: 700;
+        line-height: 1.14;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: $tit-text-color;
+    }
+    
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
+    
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 270px;
+        height: 120px;
+        background-color: $bcg-filtr-color;
+    }
+    
+    &__par {
+        line-height: 1.71;
+    }
 }

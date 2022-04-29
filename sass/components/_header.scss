@@ -19,27 +19,27 @@
 
 .nav {
     display: flex;
-}
-
-.nav__item:not(:first-child) {
-    margin-left: 50px;
-}
-
-.nav__link {
-    display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    letter-spacing: 0.02em;
-    font-weight: 500;
-    line-height: 1.14;
-    color: $tit-text-color;
-    transition: color $cubic-bezier;
-    &:hover,
-    &:focus {
-        color: $link-hover-color;
+    
+    &__item:not(:first-child) {
+        margin-left: 50px;
+    }
+    
+    &__link {
+        display: flex;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        letter-spacing: 0.02em;
+        font-weight: 500;
+        line-height: 1.14;
+        color: $tit-text-color;
+        transition: color $cubic-bezier;
+        &:hover,
+        &:focus {
+            color: $link-hover-color;
+        }
     }
 }
-
+    
 
 .current {
     position: relative;
@@ -63,25 +63,25 @@
     &__item:last-child {
         margin-left: 30px;
     }
-}
-
-
-.contact__link {
-    display: flex;
-    align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    letter-spacing: 0.02em;
-    font-weight: 500;
-    line-height: 1.14;
-    transition: color $cubic-bezier;
-    color: $general-text-color;
-    &:hover,
-    &:focus {
-        color: $link-hover-color;
+    
+    
+    &__link {
+        display: flex;
+        align-items: center;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        letter-spacing: 0.02em;
+        font-weight: 500;
+        line-height: 1.14;
+        transition: color $cubic-bezier;
+        color: $general-text-color;
+        &:hover,
+        &:focus {
+            color: $link-hover-color;
+        }
     }
-}
-.contact__icon {
-    fill: currentColor;
-    margin-right: 10px;
+    &__icon {
+        fill: currentColor;
+        margin-right: 10px;
+    }
 }

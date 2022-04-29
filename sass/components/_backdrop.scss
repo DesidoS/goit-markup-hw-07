@@ -35,32 +35,32 @@
     border-radius: 4px;
     background-color: $white-text-color;
 
-}
-
-.modal__close {
-    position: absolute;
-    padding: 0;
-    right: 8px;
-    top: 8px;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    background-color: $white-text-color;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    &:hover .modal__icon,
-    &:focus .modal__icon {
-        fill: $link-hover-color;
+    
+    &__close {
+        position: absolute;
+        padding: 0;
+        right: 8px;
+        top: 8px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background-color: $white-text-color;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        &:hover .modal__icon,
+        &:focus .modal__icon {
+            fill: $link-hover-color;
+        }
+    }
+    
+    &__icon {
+        width: 11px;
+        height: 11px;
+        fill: black;
+        transition: fill $cubic-bezier;
     }
 }
-
-.modal__icon {
-    width: 11px;
-    height: 11px;
-    fill: black;
-    transition: fill $cubic-bezier;
-}
-
+    
 .form__header {
     display: block;
     padding-left: 4px;
@@ -132,43 +132,43 @@
     display: flex;
     margin-top: 20px;
     margin-bottom: 30px;
-}
-
-.check__label {
-    line-height: 1.71;
-    margin-left: 30px;
-}
-
-.chec__link {
-    color: $link-hover-color;
-    text-decoration: underline;
-}
-
-.check__input {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    border: 0;
-    clip: rect(0 0 0 0);
-    &:checked~.check__icon {
-        border-color: transparent;
-        background-image: url(../images/check1.svg);
+    
+    &__label {
+        line-height: 1.71;
+        margin-left: 30px;
     }
-}
-
-.check__icon {
-    position: absolute;
-    display: block;
-    width: 16px;
-    height: 15px;
-    top: 4px;
-    left: 9px;
-    background-size: cover;
-    background-position: center;
-    background-origin: border-box;
-    background-image: url(../images/border.svg);
-    transition: background-image $cubic-bezier;
+    
+    &__link {
+        color: $link-hover-color;
+        text-decoration: underline;
+    }
+    
+    &__input {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        border: 0;
+        clip: rect(0 0 0 0);
+        &:checked~.check__icon {
+            border-color: transparent;
+            background-image: url(../images/check1.svg);
+        }
+    }
+    
+    &__icon {
+        position: absolute;
+        display: block;
+        width: 16px;
+        height: 15px;
+        top: 4px;
+        left: 9px;
+        background-size: cover;
+        background-position: center;
+        background-origin: border-box;
+        background-image: url(../images/border.svg);
+        transition: background-image $cubic-bezier;
+    }
 }
